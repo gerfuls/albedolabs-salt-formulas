@@ -2,10 +2,15 @@
 deploy:
   user.present:
     - shell: /bin/bash
-    - optional_groups:
-      - staff
-      - admin
-      - wheel
+
+{% for user, data in pillar.get('users', {}).items() %}
+{% if data['rvm_group'] %}
+{{user}}:
+  user.present:
+    - groups:
+      - deploy
+{% endif %}
+{% endfor %}
 
 rvm-deps:
   pkg.installed:
