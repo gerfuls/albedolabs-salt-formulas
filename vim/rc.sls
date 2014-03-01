@@ -1,4 +1,4 @@
-/etc/vimrc:
+/etc/vim/vimrc.local:
   file.managed:
     - source: salt://vim/files/vimrc
     - mode: 644
