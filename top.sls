@@ -8,6 +8,6 @@ base:
     - users
   'salt-master*':
     - vim.salt
-  'myinstance':
-    - nginx
+  'myinstance*':
     - rvm
+    - nginx_passenger
