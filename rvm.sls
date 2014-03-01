@@ -1,16 +1,4 @@
-# TODO Find a way to parameterize username
-deploy:
-  user.present:
-    - shell: /bin/bash
-
-{% for user, data in pillar.get('users', {}).items() %}
-{% if data['rvm_group'] %}
-{{user}}:
-  user.present:
-    - groups:
-      - deploy
-{% endif %}
-{% endfor %}
+# Taken from http://docs.saltstack.com/ref/states/all/salt.states.rvm.html
 
 rvm-deps:
   pkg.installed:
@@ -55,8 +43,7 @@ mri-deps:
 ruby-1.9.3-p448:
   rvm.installed:
     - default: True
-    - user: deploy
     - require:
       - pkg: rvm-deps
       - pkg: mri-deps
-      - user: deploy
+
