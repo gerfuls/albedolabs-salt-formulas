@@ -1,0 +1,5 @@
+server {
+  listen 80 default_server;
+  root /var/www/rails-application/current/public;
+  passenger_enabled on;
+}

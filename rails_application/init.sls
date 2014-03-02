@@ -13,9 +13,9 @@ include:
 bundler:
   gem.installed
 
-/etc/nginx/sites-enabled/rails_application:
+/etc/nginx/sites-enabled/rails-application:
   file.managed:
-    - source: salt://rails_application/files/rails_application
+    - source: salt://rails_application/files/rails-application
     # Copy permissions of main nginx.conf file
     - use:
       - file: /etc/nginx/nginx.conf
