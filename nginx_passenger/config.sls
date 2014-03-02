@@ -1,6 +1,6 @@
 /etc/nginx/nginx.conf:
   file.managed:
-    - source: salt://nginx_passenger/files/nginx.conf
+    - source: salt://nginx_passenger/nginx.conf
     - mode: 644 
     - user: root
     - group: root
