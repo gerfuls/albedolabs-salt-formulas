@@ -1,0 +1,2 @@
+production:
+  {{ pillar['apollo']['env'] | yaml }}

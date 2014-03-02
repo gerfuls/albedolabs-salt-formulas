@@ -1,0 +1,8 @@
+production:
+  adapter: mysql2
+  host: {{ pillar['apollo']['database']['host'] }}
+  database: {{ pillar['apollo']['database']['database'] }}
+  username: {{ pillar['apollo']['database']['username'] }}
+  password: {{ pillar['apollo']['database']['password'] }}
+  pool: 5
+  timeout: 5000
