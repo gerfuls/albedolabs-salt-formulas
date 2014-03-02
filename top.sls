@@ -9,4 +9,4 @@ base:
   'salt-master*':
     - vim.salt
   'myinstance*':
-    - rails_application
+    - apollo
