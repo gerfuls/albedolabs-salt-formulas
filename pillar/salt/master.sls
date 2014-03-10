@@ -11,11 +11,11 @@ salt:
       - https://github.com/saltstack-formulas/hostsfile-formula.git
       - https://github.com/saltstack-formulas/users-formula.git
       - https://github.com/saltstack-formulas/salt-formula.git
-    #ext_pillar:
-    #  - git: master https://github.com/tmandry/albedolabs-salt-formulas.git root=pillar
+    ext_pillar:
+      - git: master https://github.com/tmandry/albedolabs-salt-formulas.git root=pillar
     pillar_roots:
       base:
-        - /srv/salt/pillar
+        #- /srv/salt/pillar
         - /srv/pillar
     file_roots:
       base:
