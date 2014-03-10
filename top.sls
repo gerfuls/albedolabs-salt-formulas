@@ -10,3 +10,5 @@ base:
     - vim.salt
   'myinstance*':
     - apollo
+  'sxsw-web*':
+    - apollo
