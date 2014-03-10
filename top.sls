@@ -7,6 +7,7 @@ base:
     - tmux
     - users
   'salt-master*':
+    - salt.master
     - vim.salt
   'myinstance*':
     - apollo
