@@ -2,6 +2,7 @@ base:
   '*':
     - salt.rackspace_global
     - salt.minion
+    - new_relic
     - users
   'salt-master':
     - salt.rackspace

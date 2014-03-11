@@ -1,6 +1,7 @@
 base:
   '*':
     - salt.minion
+    - new_relic
     - hostsfile
     - vim
     - vim.rc
