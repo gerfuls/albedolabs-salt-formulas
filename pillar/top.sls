@@ -6,8 +6,11 @@ base:
   'salt-master':
     - salt.rackspace
     - salt.master
-  'myinstance*':
-    - apollo.staging
+  'apollo-*-web*':
     - apollo.deploy
-  'sxsw*':
+  'apollo-staging-web*':
+    - apollo.staging
+  'apollo-prod*-web*':
+    - apollo.production
+  'apollo-*-elasticsearch*':
     - elasticsearch

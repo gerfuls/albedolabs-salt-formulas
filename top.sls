@@ -8,10 +8,11 @@ base:
     - vim.default
     - tmux
     - users
-  'salt-master*':
+  'salt-master':
     - salt.mymaster
     - vim.salt
-  'myinstance*':
+  'apollo-*-web*':
     - apollo
-  'sxsw-web*':
-    - apollo
+  '*-*-elasticsearch*':
+    - elasticsearch
+    - elasticsearch.plugins
