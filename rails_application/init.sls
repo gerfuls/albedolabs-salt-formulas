@@ -16,6 +16,7 @@ bundler:
 /etc/nginx/sites-enabled/rails-application:
   file.managed:
     - source: salt://rails_application/rails-application
+    - template: jinja
     # Copy permissions of main nginx.conf file
     - use:
       - file: /etc/nginx/nginx.conf

@@ -1,5 +1,6 @@
 server {
   listen 80 default_server;
+  server_name {{ pillar['rails_application']['server_name'] }};
   root /var/www/rails-application/current/public;
   passenger_enabled on;
 }
