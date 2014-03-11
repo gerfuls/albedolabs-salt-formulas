@@ -9,3 +9,5 @@ base:
   'myinstance*':
     - apollo.staging
     - apollo.deploy
+  'sxsw*':
+    - elasticsearch
