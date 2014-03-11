@@ -7,7 +7,7 @@ apollo-gem-deps:
       - g++
       - libmysqlclient-dev
       - libmysqlclient18
-      - libxslt-dev
+      - libxslt1-dev
       - libxml2-dev
       - make
       - mysql-client-5.5

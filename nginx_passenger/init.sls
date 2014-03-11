@@ -28,7 +28,7 @@ passenger-nginx:
     - names:
       - nginx-extras
       - passenger
-    - requre-in:
+    - require-in:
       - sls: nginx_passenger.config
 
 nginx:
@@ -37,3 +37,5 @@ nginx:
     - enable: True
     - watch:
       - file: /etc/nginx/*
+    - require:
+      - pkg: passenger-nginx
