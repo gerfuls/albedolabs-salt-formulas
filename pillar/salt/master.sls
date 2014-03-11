@@ -22,3 +22,5 @@ salt:
         - /srv/salt
     # Don't print output of states that don't change
     state_verbose: false
+  minion:
+    master: salt

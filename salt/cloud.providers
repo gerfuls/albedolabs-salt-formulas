@@ -1,0 +1,20 @@
+my-rackspace-config:
+  minion:
+    # Master address on ServiceNet
+    master: {{ pillar['rackspace']['master_ip'] }}
+
+  # Configure Rackspace using the OpenStack plugin
+  #
+  identity_url: 'https://identity.api.rackspacecloud.com/v2.0/tokens'
+  compute_name: cloudServersOpenStack
+  protocol: ipv4
+
+  compute_region: {{ pillar['rackspace']['compute_region'] }}
+
+  # Configure Rackspace authentication credentials
+  #
+  user: {{ pillar['rackspace']['auth']['user'] }}
+  tenant: {{ pillar['rackspace']['auth']['tenant'] }}
+  apikey: {{ pillar['rackspace']['auth']['apikey'] }}
+
+  provider: openstack
