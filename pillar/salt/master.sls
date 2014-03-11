@@ -10,7 +10,7 @@ salt:
       - https://github.com/saltstack-formulas/nginx-formula.git
       - https://github.com/saltstack-formulas/hostsfile-formula.git
       - https://github.com/saltstack-formulas/users-formula.git
-      - https://github.com/saltstack-formulas/salt-formula.git
+      - https://github.com/tmandry/salt-formula.git
     #ext_pillar:
     #  - git: master https://github.com/tmandry/albedolabs-salt-formulas.git root=pillar
     pillar_roots:

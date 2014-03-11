@@ -1,5 +1,7 @@
 base:
   '*':
+    - salt.minion
+    - hostsfile
     - vim
     - vim.rc
     - vim.nerdtree
