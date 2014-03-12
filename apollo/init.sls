@@ -39,3 +39,8 @@ apollo-gem-deps:
     - use:
       - file: {{ config }}/application.yml
 
+{{ config }}/newrelic.yml:
+  file.managed:
+    - source: salt://apollo/newrelic.yml
+    - use:
+      - file: {{ config }}/application.yml
