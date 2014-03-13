@@ -5,6 +5,7 @@ apollo-gem-deps:
   pkg.installed:
     - names:
       - g++
+      - imagemagick
       - libmysqlclient-dev
       - libmysqlclient18
       - libxslt1-dev
