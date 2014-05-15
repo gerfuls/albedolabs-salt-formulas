@@ -14,6 +14,9 @@ base:
     - vim.salt
   'apollo-*-web*':
     - apollo
+  'apollo-*-web1':
+    # Only run this cron on one instance
+    - apollo.database_backup
   '*-*-elasticsearch*':
     - elasticsearch
     - elasticsearch.plugins
