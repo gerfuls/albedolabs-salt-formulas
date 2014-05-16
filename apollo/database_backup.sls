@@ -5,7 +5,7 @@ python-pip:
 
 mysql-backup-deps:
   pip.installed:
-    - name: swift >= 1.0.2
+    - name: python-swiftclient >= 2.0.3
     - require:
       - pkg: python-dev
       - pkg: python-pip
